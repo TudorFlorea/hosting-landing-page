@@ -50,6 +50,25 @@ html, body {
     color: #fff;
 }
 
+.price-card-title,
+.price-card-info,
+.price-card-price,
+.price-card-price-info,
+.price-card-button,
+.image-text-info-h3,
+.image-text-info-p,
+.option-text,
+.option-heading,
+.testimonial-text,
+.testimonial-signature,
+.footer-nav-list-heading,
+.footer-nav-list,
+#footer-contact-wrapper,
+#footer-copyright-text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+
 #header-section {
     background-color: #5b429d;
     background-image: url("./media/laptop.jpg");
@@ -175,20 +194,7 @@ html, body {
     margin-right: 1.5%;
 }
 
-.price-card-title,
-.price-card-info,
-.price-card-price,
-.price-card-price-info,
-.price-card-button,
-.image-text-info-h3,
-.image-text-info-p,
-.option-text,
-.option-heading,
-.testimonial-text,
-.testimonial-signature {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 400;
-}
+
 
 .price-card-title {
     font-size: 30px;
@@ -420,4 +426,86 @@ html, body {
 
 #footer-section {
     background-color: #029487;
+    padding: 40px 0px;
+}
+
+#footer-nav-wrapper {
+    display: inline-block;
+    width: 75%;
+    vertical-align: top;
+}
+
+#footer-contact-wrapper {
+    display: inline-block;
+    width: 24.5%;
+    vertical-align: top;
+}
+
+.footer-nav-list-wrapper {
+    display: inline-block;
+    width: 24.6%;
+    vertical-align: top;
+}
+
+.footer-nav-list {
+    list-style-type: none;
+}
+
+.footer-nav-list-heading {
+    color: #fff;
+}
+
+.footer-nav-list-item-link {
+    color: #E1EF42;
+    padding: 8px 0px;
+    text-decoration: none;
+    display: block;
+}
+
+.footer-nav-list-item-link:hover {
+    text-decoration: underline;
+}
+
+.concact-icon {
+    display: inline-block;
+    width: 15%;
+    height: auto;
+}
+
+.footer-location-text,
+.footer-telephone-text {
+    display: inline-block;
+    color: #fff;
+    width: 82.5%;
+    vertical-align: top;
+    padding-left: 2%;
+    
+}
+
+.footer-location-text {
+    font-size: 10px;
+    padding-top: 10px;
+}
+
+.footer-telephone-text {
+    padding-top: 8px;
+    font-size: 20px;
+}
+
+#footer-social-icons-list {
+    list-style-type: none;
+    padding: 20px 0px;
+}
+
+.footer-social-icons-list-item {
+    display: inline-block;
+    width: 18.5%;
+}
+
+.footer-social-icons-list-item a img {
+    width: 80%;
+}
+
+#footer-copyright-text {
+    color: #fff;
 }
