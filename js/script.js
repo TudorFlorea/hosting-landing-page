@@ -1,25 +1,9 @@
 $(function() {
-
-    $(".price-card-button").on({
-        'mouseenter': function() {
-            $(this)
-                //.parent()
-                //.parent()
-                //.css( "box-shadow", "0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)" );
-                .animate({boxShadow: '0 0 30px #44f'});
-                // .animate({ 
-                //     boxShadow: "0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)"
-                // }, 1000); 
-        },
-        'mouseleave': function() {
-            $(this)
-                .parent()
-                .parent()
-                .animate({
-                    boxShadow: "0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)"
-                });
-            
-        }
+    $('.features-list-item-link').on('click', function() {
+        $(this).parent().parent().find(".features-list-item-selected").removeClass("features-list-item-selected");
+        $(this).parent().parent().find(".black-link").removeClass("black-link");
+        $(this).parent().addClass("features-list-item-selected");
+        $(this).parent().find(".features-list-item-link").addClass("black-link");
+        $("#features-details-heading").text($(this).find('span').text());
     });
-    //alert("a");
 });
